@@ -9,198 +9,194 @@
 </head>
 <body>
 
-  <!-- Header -->
-   <header>
+<!-- Header -->
+<header class="fade-up">
   <div class="logo">
-<img src="./Assets/newmainlogo.png" alt="Artistic Lawyer Logo"> 
-  <span><a href="#home">Artistic Lawyer</a></span>
-</div>
+    <img src="./Assets/newmainlogo.png" alt="Artistic Lawyer Logo"> 
+    <span><a href="#home">Artistic Lawyer</a></span>
+  </div>
 
   <nav class="nav-links" id="navLinks">
     <ul>
-      <li><a href="#home">Home</a></li>
+      <li><a href="#hero">Home</a></li>
       <li><a href="#gallery">Gallery</a></li>
+
       <li class="dropdown">
-    <a href="#events" class="dropdown-toggle">Events</a>
-    <ul class="dropdown-menu">
-        <li><a href="#upcoming-events">Upcoming Events</a></li>
-        <li><a href="#pastEvents">Events</a></li>
-    </ul>
-</li>
+        <a class="dropdown-toggle">Events</a>
+        <ul class="dropdown-menu">
+            <li><a href="#upcoming-events">Upcoming Events</a></li>
+            <li><a href="#pastEvents">Events</a></li>
+        </ul>
+      </li>
+
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
-      
     </ul>
   </nav>
+
   <div class="hamburger" id="hamburger">
-  <span class="bar"></span>
-  <span class="bar"></span>
-  <span class="bar"></span>
-</div>
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
 </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <img src="./Assets/maam.jpg" alt="Hero Background" class="hero-bg">
-    <div class="hero-content">
-      <h1>Welcome to Artistic Lawyer</h1>
-      <p>Discover amazing events and explore stunning galleries from around the world.</p>
-      <a href="#events" class="btn">Explore Events</a>
+<!-- Hero Section -->
+<section class="hero" id="hero">
+  <img src="./Assets/maam.jpg" class="hero-bg">
+  <div class="hero-content fade-up float-up">
+    <h1>Welcome to Artistic Lawyer</h1>
+    <p>Discover amazing events and explore stunning galleries from around the world.</p>
+    <a href="#gallery" class="btn">Explore gallery</a>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="gallery-section fade-up" id="gallery">
+  <h2 class="fade-up">Our Gallery</h2>
+
+  <div class="gallery-grid">
+    <div class="gallery-item zoom-in hover-glow">
+      <img src="./Assets/h7.png">
     </div>
-  </section>
 
-  <!-- Gallery Section -->
-  <section class="gallery-section" id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="./Assets/h7.png" alt="Gallery Image 1">
-        <p></p>
-      </div>
-      <div class="gallery-item">
-        <img src="./Assets/h2.jpg" alt="Gallery Image 2">
-        <p></p>
-      </div>
-      <div class="gallery-item">
-        <img src="./Assets/h3.jpg" alt="Gallery Image 3">
-        <p></p>
-      </div>
-      <div class="gallery-item">
-        <img src="./Assets/h4.jpg" alt="Gallery Image 4">
-        <p></p>
-      </div>
-      <div class="gallery-item">
-        <img src="./Assets/h5.jpg" alt="Gallery Image 4">
-        <p></p>
-      </div>
-
-       <div class="gallery-item">
-        <img src="./Assets/h6.png" alt="Gallery Image 4">
-        <p></p>
-      </div>
+    <div class="gallery-item zoom-in hover-glow">
+      <img src="./Assets/h2.jpg">
     </div>
-  </section>
 
-  <!-- Upcoming Events Section -->
-<section id="upcoming-events" class="events">
-  <h2>Upcoming Events</h2>
-  <p class="events-intro">Stay tuned for exciting workshops, exhibitions, and art experiences coming soon.</p>
+    <div class="gallery-item zoom-in hover-glow">
+      <img src="./Assets/h3.jpg">
+    </div>
 
-  <!-- Dynamic Upcoming Events Will Load Here -->
-  <div class="no-events-container" id="upcoming-events">
+    <div class="gallery-item zoom-in hover-glow">
+      <img src="./Assets/h4.jpg">
+    </div>
+
+    <div class="gallery-item zoom-in hover-glow">
+      <img src="./Assets/h5.jpg">
+    </div>
+
+    <div class="gallery-item zoom-in hover-glow">
+      <img src="./Assets/h6.png">
+    </div>
+  </div>
+</section>
+
+<!-- Upcoming Events -->
+<section id="upcoming-events" class="events fade-up">
+  <h2 class="fade-up">Upcoming Events</h2>
+  <p class="events-intro fade-up">Stay tuned for exciting workshops, exhibitions, and art experiences coming soon.</p>
+
+  <div class="no-events-container rise">
     <p class="no-events-message">There are no upcoming events at the moment. Please check back later!</p>
   </div>
 </section>
 
-  
-  <!-- About Section -->
-<section id="about" class="about">
-  <h2>About the Artist</h2>
- <div class="about-card slide-left">
-    <img src="./Assets/neeluji.jpg" alt="Radhika Rungta - Artist Portrait" />
+<!-- About Section -->
+<section id="about" class="about fade-up">
+  <h2 class="fade-up">About the Artist</h2>
 
-    <div class="about-info slide-left">
-      <h3>Neelu Rungta</h3>
-      <p>
-      
-Neelu Rungta is a devoted homemaker and a lifelong artist whose love for art began in childhood. She completed her fashion designing degree, but her true passion always lay in creating expressive paintings. Over the years, she has mastered the richness of oil painting and continues to craft soulful pieces that reflect her artistic journey. Balancing home and creativity with grace, she still finds time to pour her heart onto canvas. Many of the artworks featured on this website are her beautiful creations, each one a testament to her dedication and talent.
-      </p>
-    </div>
-    
-  </div>
-  <div class="about-card slide-right">
-    <img src="./Assets/radhikaji.jpg" alt="Radhika Rungta - Artist Portrait" />
-
+  <div class="about-card slide-left rise">
+    <img src="./Assets/neeluji.jpg">
     <div class="about-info">
-      <h3>Radhika Rungta Agrawal</h3>
-      <p>
-   Radhika Rungta Agrawal is an artist by heart and a lawyer by profession. Inspired by her mother’s beautiful paintings, she developed a deep love for art from childhood. After completing her law graduation in 2020, she rediscovered her passion during the Covid years and began creating again. What started as a personal escape soon grew into a journey of workshops, creativity, and community. Today, she blends her artistic expression with mindful experiences, sharing the joy of art with everyone who connects with her work.
-      </p>
+      <h3 class="fade-up">Neelu Rungta</h3>
+      <p class="fade-up">Neelu Rungta is a devoted homemaker and a lifelong artist whose love for art began in childhood. She completed her fashion designing degree, but her true passion always lay in creating expressive paintings. Over the years, she has mastered the richness of oil painting and continues to craft soulful pieces that reflect her artistic journey. Balancing home and creativity with grace, she still finds time to pour her heart onto canvas. Many of the artworks featured on this website are her beautiful creations, each one a testament to her dedication and talent.</p>
     </div>
-    
   </div>
-  
+
+  <div class="about-card slide-right rise">
+    <img src="./Assets/radhikaji.jpg">
+    <div class="about-info">
+      <h3 class="fade-up">Radhika Rungta Agrawal</h3>
+      <p class="fade-up">Radhika Rungta Agrawal is an artist by heart and a lawyer by profession. Inspired by her mother’s beautiful paintings, she developed a deep love for art from childhood. After completing her law graduation in 2020, she rediscovered her passion during the Covid years and began creating again. What started as a personal escape soon grew into a journey of workshops, creativity, and community. Today, she blends her artistic expression with mindful experiences, sharing the joy of art with everyone who connects with her work.</p>
+    </div>
+  </div>
 </section>
 
+<!-- Past Events -->
+<section class="events fade-up" id="pastEvents">
+  <h2 class="fade-up">Events & Exhibitions</h2>
+  <p class="events-intro fade-up">Take a look back at past exhibitions...</p>
 
- <!-- Events Section -->
-  <section class="events" id="pastEvents">
-    <h2>Events & Exhibitions</h2>
-    <p class="events-intro">Take a look back at our past exhibitions, live art sessions, and gallery showcases, featuring remarkable artworks and memorable experiences with the artists.</p>
-    <div class="events-items">
-      <div class="event-item">
-        <img src="./Assets/event.jpeg" alt="Event 1">
-        <div class="event-info">
-          <h3>Mood Mapping Therapeutic Art Workshop</h3>
-          <p>Date: 2025-11-21 | Venue: Omaya Gardens , Raipur</p>
-        </div>
-      </div>
-      <div class="event-item">
-        <img src="./Assets/pastevent.jpeg" alt="Event 2">
-        <div class="event-info">
-          <h3>SIP & PAINT!</h3>
-          <p>Date: 2023-10-01 | Venue: Meraki & Company, Qasba VIP Estate, Raipur</p>
-        </div>
-      </div>
-      <div class="event-item">
-        <img src="./Assets/pastevent2.jpeg" alt="Event 3">
-        <div class="event-info">
-          <h3>COFFEE PAINTING WORKSHOP</h3>
-          <p>Date: 2023-07-23 | Venue: THE ROMAN PARK, DURG</p>
-        </div>
-      </div>
-      <div class="event-item">
-        <img src="./Assets/pastevent3.jpeg" alt="Event 4">
-        <div class="event-info">
-          <h3>PAINT WITH A TWIST</h3>
-          <p>Date: 2023-06-25 | Venue: Lagom Hospitality, Katora Talab, Raipur</p>
-        </div>
-      </div>
-        <div class="event-item">
-        <img src="./Assets/pastevent4.jpeg" alt="Event 4">
-        <div class="event-info">
-          <h3>PAINT WITH A TWIST</h3>
-          <p>Date: 2023-05-14 | Venue: Nothing Before Coffee, Nehru Nagar, Raipur</p>
-        </div>
+  <div class="events-items">
+    
+    <div class="event-item glow-border zoom-in">
+      <img src="./Assets/event.jpeg">
+      <div class="event-info">
+        <h3>Mood Mapping Therapeutic Art Workshop</h3>
+        <p>Date: 2025-11-21 | Venue: Omaya Gardens</p>
       </div>
     </div>
-    <!-- <div class="explore-events-btn-container">
-      <button class="explore-events-btn"><a href="#events">Explore All Events</a></button>
-    </div> -->
-  </section>
 
+    <div class="event-item glow-border zoom-in">
+      <img src="./Assets/pastevent.jpeg">
+      <div class="event-info">
+        <h3>SIP & PAINT!</h3>
+        <p>Date: 2023-10-01 | Venue: Meraki & Company</p>
+      </div>
+    </div>
 
-  <!-- Footer -->
-  <footer class="site-footer" id="contact">
+    <div class="event-item glow-border zoom-in">
+      <img src="./Assets/pastevent2.jpeg">
+      <div class="event-info">
+        <h3>COFFEE PAINTING WORKSHOP</h3>
+        <p>Date: 2023-07-23 | Venue: THE ROMAN PARK</p>
+      </div>
+    </div>
+
+    <div class="event-item glow-border zoom-in">
+      <img src="./Assets/pastevent3.jpeg">
+      <div class="event-info">
+        <h3>PAINT WITH A TWIST</h3>
+        <p>Date: 2023-06-25 | Venue: Lagom Hospitality</p>
+      </div>
+    </div>
+
+    <div class="event-item glow-border zoom-in">
+      <img src="./Assets/pastevent4.jpeg">
+      <div class="event-info">
+        <h3>PAINT WITH A TWIST</h3>
+        <p>Date: 2023-05-14 | Venue: NBC Nehru Nagar</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer fade-up" id="contact">
   <div class="footer-wrapper">
-    <h3 class="footer-heading">Get in Touch with Us</h3>
-    <div class="footer-contacts">
-      <div class="contact-item"><i class="fas fa-phone"></i> <a href="tel:+911234567890">+91 7000300676</a></div>
-     
-<div class="contact-item">
-  <i class="fab fa-instagram"></i>
-  <a href="https://www.instagram.com/artistic_lawyer/" target="_blank">@artistic_lawyer</a>
-</div>
-      <div class="contact-item"><i class="fas fa-envelope"></i> <a href="mailto:hello@artisticlawyer.com">artisticlawyer18@gmail.com</a></div>
+    <h3 class="footer-heading fade-up">Get in Touch with Us</h3>
+
+    <div class="footer-contacts fade-up">
+      <div class="contact-item"><i class="fas fa-phone"></i> <a href="tel:+917000300676">+91 7000300676</a></div>
+
+      <div class="contact-item">
+        <i class="fab fa-instagram"></i>
+        <a href="https://www.instagram.com/artistic_lawyer/" target="_blank">@artistic_lawyer</a>
+      </div>
+
+      <div class="contact-item"><i class="fas fa-envelope"></i> artisticlawyer18@gmail.com</div>
     </div>
 
-    <p class="footer‑copyright">&copy; 2025 <b>Artistic Lawyer</b>. All rights reserved.Develop and Maintain by <b>Naman Jain</b></p>
+    <p class="footer-copyright fade-up">
+      © 2025 <b>Artistic Lawyer</b>. All rights reserved. Developed by <b>Naman Jain</b>
+    </p>
   </div>
 </footer>
 
-  <!-- Buy Now Modal -->
-  <div class="modal" id="buyNowModal">
-    <div class="modal-content">
-      <span class="close-btn">&times;</span>
-      <h3>Buy Tickets</h3>
-      <p>Secure your spot at our upcoming event!</p>
-      <button class="buy-now-btn">Buy Now</button>
-    </div>
+<!-- Modal -->
+<div class="modal" id="buyNowModal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3>Buy Tickets</h3>
+    <p>Secure your spot at our upcoming event!</p>
+    <button class="buy-now-btn">Buy Now</button>
   </div>
+</div>
 
-  <!-- Scripts -->
-  <script>
-    // Hamburger Menu Toggle
+<!-- JS -->
+<script>
+ // Hamburger Menu Toggle
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     hamburger.addEventListener('click', () => {
@@ -229,18 +225,25 @@ Neelu Rungta is a devoted homemaker and a lifelong artist whose love for art beg
       if (e.target === modal) modal.style.display = 'none';
     });
 
-    // Fade-in on scroll
-    const faders = document.querySelectorAll('.fade-in, .slide-left, .slide-right');
-    const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
-    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      });
-    }, appearOptions);
-    faders.forEach(fader => appearOnScroll.observe(fader));
-  </script>
+/* New Scroll Animation Engine */
+const animatedElements = document.querySelectorAll(
+  ".fade-up, .zoom-in, .rise, .slide-left, .slide-right"
+);
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+
+animatedElements.forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
+
+
+
