@@ -196,21 +196,52 @@
 
 <!-- JS -->
 <script>
- // Hamburger Menu Toggle
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
-      navLinks.classList.toggle('active');
-    });
+  const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+const navItems = navLinks.querySelectorAll('a');
 
-    // Dropdown for Mobile
-    const dropdowns = document.querySelectorAll('.dropdown');
-    dropdowns.forEach(drop => {
-      drop.addEventListener('click', () => {
-        drop.classList.toggle('open');
-      });
-    });
+const dropdown = document.querySelector('.dropdown');
+const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
+
+
+// Toggle hamburger menu
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  hamburger.classList.toggle('active');
+
+  // FIX: Always close the Events dropdown when menu is opened/closed
+  dropdown.classList.remove('open');
+});
+
+
+// Close menu when NON-drophdown links are clicked
+navItems.forEach(item => {
+  item.addEventListener('click', (e) => {
+
+    // If clicking the Events dropdown toggle on mobile → do NOT close menu
+    if (item.classList.contains('dropdown-toggle') && window.innerWidth <= 768) {
+      e.preventDefault();
+      return;
+    }
+
+    // Close menu for all other links
+    navLinks.classList.remove('active');
+    hamburger.classList.remove('active');
+
+    // Also close the dropdown always
+    dropdown.classList.remove('open');
+  });
+});
+
+
+// Toggle dropdown on mobile
+dropdownToggle.addEventListener('click', (e) => {
+  if (window.innerWidth <= 768) {
+    e.preventDefault();
+    dropdown.classList.toggle('open');
+  }
+});
+
 
     // Modal
     const modal = document.getElementById('buyNowModal');
