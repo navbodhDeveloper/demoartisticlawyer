@@ -53,32 +53,95 @@
 
 <!-- Gallery Section -->
 <section class="gallery-section fade-up" id="gallery">
-  <h2 class="fade-up">Our Gallery</h2>
+  <h2 class="fade-up">Buy Original Artwork</h2>
 
   <div class="gallery-grid">
-    <div class="gallery-item zoom-in hover-glow">
-      <img src="./Assets/h7.png">
-    </div>
+    
+<div class="gallery-card">
+  <img src="./Assets/h7.png" alt="Painting" class="card-image">
+  <div class="card-content">
+    <!-- <h3 class="card-title">Beautiful Painting</h3> -->
+    <p class="card-description">
+      Images are for reference only. Actual painting size is smaller than it appears.
+    </p>
+    <!-- <p class="card-price">₹3200</p> -->
+    <button class="buy-btn">Contact Us</button>
+  </div>
+</div>
 
-    <div class="gallery-item zoom-in hover-glow">
-      <img src="./Assets/h2.jpg">
-    </div>
+<div class="gallery-card">
+  <img src="./Assets/h2.jpg" alt="Painting" class="card-image">
+  <div class="card-content">
+    <!-- <h3 class="card-title">Beautiful Painting</h3> -->
+    <p class="card-description">
+      Images are for reference only. Actual painting size is smaller than it appears.
+    </p>
+    <!-- <p class="card-price">₹2900</p> -->
+    <button class="buy-btn">Contact Us</button>
+  </div>
+</div>
 
-    <div class="gallery-item zoom-in hover-glow">
-      <img src="./Assets/h3.jpg">
-    </div>
 
-    <div class="gallery-item zoom-in hover-glow">
-      <img src="./Assets/h4.jpg">
-    </div>
 
-    <div class="gallery-item zoom-in hover-glow">
-      <img src="./Assets/h5.jpg">
-    </div>
+<div class="gallery-card">
+  <img src="./Assets/h3.jpg" alt="Painting" class="card-image">
+  <div class="card-content">
+    <!-- <h3 class="card-title">Beautiful Painting</h3> -->
+    <p class="card-description">
+      Images are for reference only. Actual painting size is smaller than it appears.
+    </p>
+    <!-- <p class="card-price">₹3500</p> -->
+    <button class="buy-btn">Contact Us</button>
+  </div>
+</div>
 
-    <div class="gallery-item zoom-in hover-glow">
-      <img src="./Assets/h6.png">
-    </div>
+
+
+
+<div class="gallery-card">
+  <img src="./Assets/h4.jpg" alt="Painting" class="card-image">
+  <div class="card-content">
+    <!-- <h3 class="card-title">Beautiful Painting</h3> -->
+    <p class="card-description">
+      Images are for reference only. Actual painting size is smaller than it appears.
+    </p>
+    <!-- <p class="card-price">₹3500</p> -->
+    <button class="buy-btn">Contact Us</button>
+  </div>
+</div>
+
+
+
+
+<div class="gallery-card">
+  <img src="./Assets/h5.jpg" alt="Painting" class="card-image">
+  <div class="card-content">
+    <!-- <h3 class="card-title">Beautiful Painting</h3> -->
+    <p class="card-description">
+      Images are for reference only. Actual painting size is smaller than it appears.
+    </p>
+    <!-- <p class="card-price">₹2600</p> -->
+    <button class="buy-btn">Contact Us</button>
+  </div>
+</div>
+
+
+
+
+  <div class="gallery-card">
+  <img src="./Assets/h6.png" alt="Painting" class="card-image">
+  <div class="card-content">
+    <!-- <h3 class="card-title">Beautiful Painting</h3> -->
+    <p class="card-description">
+      Images are for reference only. Actual painting size is smaller than it appears.
+    </p>
+    <!-- <p class="card-price">₹2500</p> -->
+    <button class="buy-btn">Contact Us</button>
+  </div>
+</div>
+  </div>
+  <div class="view-all">
+    <a href="all-paintings.html" class="view-all-btn">View All Paintings</a>
   </div>
 </section>
 
@@ -195,15 +258,23 @@
   </div>
 </footer>
 
-<!-- Modal -->
-<div class="modal" id="buyNowModal">
+
+<!-- Contact Modal -->
+<div id="contactModal" class="modal">
   <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <h3>Buy Tickets</h3>
-    <p>Secure your spot at our upcoming event!</p>
-    <button class="buy-now-btn">Buy Now</button>
+    <button class="close-btn" aria-label="Close modal">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+      </svg>
+    </button>
+    <h2>Contact Us</h2>
+    <p>You can reach us at:</p>
+    <p><strong>Phone:</strong> +91 7000300676</p>
+    <p><strong>Email:</strong> artisticlawyer18@gmail.com</p>
+    <p><strong>Instagram:</strong> @artistic_lawyer</p>
   </div>
 </div>
+
 
 <!-- JS -->
 <script>
@@ -253,18 +324,33 @@ dropdownToggle.addEventListener('click', (e) => {
   }
 });
 
-    // Modal
-    const modal = document.getElementById('buyNowModal');
-    const closeBtn = document.querySelector('.close-btn');
-    const buyNowBtn = document.querySelectorAll('.buy-now-btn');
+   // Get modal element
+  const modal = document.getElementById("contactModal");
 
-    buyNowBtn.forEach(btn => {
-      btn.addEventListener('click', () => modal.style.display = 'flex');
+  // Get all Buy Now buttons
+  const buyButtons = document.querySelectorAll(".buy-btn");
+
+  // Get close button
+  const closeBtn = document.querySelector(".close-btn");
+
+  // Open modal on any Buy Now click
+  buyButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      modal.style.display = "flex";
     });
-    closeBtn.addEventListener('click', () => modal.style.display = 'none');
-    window.addEventListener('click', e => {
-      if (e.target === modal) modal.style.display = 'none';
-    });
+  });
+
+  // Close modal when clicking on X
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Close modal when clicking outside the content
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
 
 /* New Scroll Animation Engine */
 const animatedElements = document.querySelectorAll(
@@ -283,6 +369,10 @@ const observer = new IntersectionObserver((entries) => {
 animatedElements.forEach(el => observer.observe(el));
 </script>
 
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightbox-img" alt="Artwork preview">
+</div>
 </body>
 </html>
 

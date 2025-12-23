@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Paintings</title>
+  <link rel="stylesheet" href="all-paintings.css">
+</head>
+<body>
+
+<section class="all-gallery-section">
+  <h2>All Paintings</h2>
+
+  <div class="gallery-grid">
+    <!-- Painting 1 -->
+    <div class="gallery-card">
+      <img src="./Assets/2500.png" alt="Painting" class="card-image">
+      <div class="card-content">
+        <p class="card-description">Images are for reference only. Actual painting size is smaller than it appears.</p>
+        <p class="card-price">₹2500</p>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Painting 2 -->
+    <div class="gallery-card">
+      <img src="./Assets/2600.png" alt="Painting" class="card-image">
+      <div class="card-content">
+        <p class="card-description">Images are for reference only. Actual painting size is smaller than it appears.</p>
+        <p class="card-price">₹2600</p>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Painting 3 -->
+    <div class="gallery-card">
+      <img src="./Assets/2700.png" alt="Painting" class="card-image">
+      <div class="card-content">
+        <p class="card-description">Images are for reference only. Actual painting size is smaller than it appears.</p>
+        <p class="card-price">₹2700</p>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Painting 4 -->
+    <div class="gallery-card">
+      <img src="./Assets/2800.png" alt="Painting" class="card-image">
+      <div class="card-content">
+        <p class="card-description">Images are for reference only. Actual painting size is smaller than it appears.</p>
+        <p class="card-price">₹2800</p>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Painting 5 -->
+    <div class="gallery-card">
+      <img src="./Assets/3000.jpeg" alt="Painting" class="card-image">
+      <div class="card-content">
+        <p class="card-description">Images are for reference only. Actual painting size is smaller than it appears.</p>
+        <p class="card-price">₹3000</p>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Painting 6 -->
+    <div class="gallery-card">
+      <img src="./Assets/3100.png" alt="Painting" class="card-image">
+      <div class="card-content">
+        <p class="card-description">Images are for reference only. Actual painting size is smaller than it appears.</p>
+        <p class="card-price">₹3000</p>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Painting 7 -->
+    <div class="gallery-card">
+      <img src="./Assets/3200.png" alt="Painting" class="card-image">
+      <div class="card-content">
+        <p class="card-description">Images are for reference only. Actual painting size is smaller than it appears.</p>
+        <p class="card-price">₹3000</p>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Painting 8 -->
+    <div class="gallery-card">
+      <img src="./Assets/3500.png" alt="Painting" class="card-image">
+      <div class="card-content">
+        <p class="card-description">Images are for reference only. Actual painting size is smaller than it appears.</p>
+        <p class="card-price">₹3000</p>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Painting 9 -->
+    <div class="gallery-card">
+      <img src="./Assets/rs 3000.png" alt="Painting" class="card-image">
+      <div class="card-content">
+        <p class="card-description">Images are for reference only. Actual painting size is smaller than it appears.</p>
+        <p class="card-price">₹3000</p>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Painting 10 -->
+    <div class="gallery-card">
+      <img src="./Assets/rs 3500.png" alt="Painting" class="card-image">
+      <div class="card-content">
+        <p class="card-description">Images are for reference only. Actual painting size is smaller than it appears.</p>
+        <p class="card-price">₹3000</p>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" aria-label="Close modal">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+      </svg>
+    </button>
+    <h2>Contact Us</h2>
+    <p>You can reach us at:</p>
+    <p><strong>Phone:</strong> +91 7000300676</p>
+    <p><strong>Email:</strong> artisticlawyer18@gmail.com</p>
+    <p><strong>Instagram:</strong> @artistic_lawyer</p>
+  </div>
+</div>
+
+  <div class="view-all">
+    <a href="./Index.html" class="view-all-btn">Back</a>
+  </div>
+<script>
+// Get modal element
+const modal = document.getElementById("contactModal");
+
+// Get all Buy Now buttons
+const buyButtons = document.querySelectorAll(".buy-btn");
+
+// Get close button
+const closeBtn = document.querySelector(".close-btn");
+
+// Open modal when any Buy Now button is clicked
+buyButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    if (modal) modal.style.display = "flex";
+  });
+});
+
+// Close modal when clicking the X button
+if (closeBtn) {
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+}
+
+// Close modal when clicking outside the modal content
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+
+</script>
+
+</body>
+</html>
