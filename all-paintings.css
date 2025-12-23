@@ -115,7 +115,7 @@ h2 {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .card-image {
-    height: 350px;
+    height: 450px;
   }
 }
 
