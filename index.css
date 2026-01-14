@@ -743,7 +743,7 @@ display: flex;
 /* Responsive Fix */
 @media (max-width: 600px) {
   .event-item img {
-    height: 450px;
+    height: 370px;
   }
 }
 
